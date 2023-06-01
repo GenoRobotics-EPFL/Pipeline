@@ -1,0 +1,7 @@
+digraph G {
+  CLI -> Controller;
+  Controller -> CRUD -> API;
+  Controller -> Auth -> API;
+  Controller -> "Consensus/Identification";
+  "Consensus/Identification" -> Controller;
+}

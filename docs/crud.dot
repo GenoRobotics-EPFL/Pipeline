@@ -1,0 +1,21 @@
+digraph G {
+  rankdir = "TD";
+  compound=true;
+  newrank=true;
+  
+  subgraph cluster_0 {
+    label = "Local";
+    Controller1 [label="Controller"];
+    DB;
+  }
+  
+  subgraph cluster_1 {
+    label = "Online";
+    Controller2 [label="Controller"];
+  }
+  
+  {rank="same"; DB -> Controller2 [label="Sync", color="blue4", fontcolor="blue4"]}
+  
+  Controller1 -> DB -> Controller1;
+  Controller2 -> API -> Controller2;
+}

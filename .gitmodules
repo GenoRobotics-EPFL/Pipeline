@@ -1,0 +1,9 @@
+[submodule "src/database"]
+	path = src/database
+	url = https://github.com/GenoRobotics-EPFL/Database
+[submodule "src/identification"]
+	path = src/identification
+	url = https://github.com/GenoRobotics-EPFL/Identification
+[submodule "src/consensus"]
+	path = src/consensus
+	url = https://github.com/GenoRobotics-EPFL/Consensus
